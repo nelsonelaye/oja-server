@@ -15,9 +15,8 @@ const createFood = async (req, res) => {
         description,
         price,
         qty,
-        image:
-          "https://res.cloudinary.com/dzc9ivqeh/image/upload/v1654301232/joseph-gonzalez-zcUgjyqEwe8-unsplash_e5smuq.jpg",
-        imageId: "joseph-gonzalez-zcUgjyqEwe8-unsplash_e5smuq",
+        image: user.avatar,
+        imageId: user._id,
       });
 
       food.user = user;
